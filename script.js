@@ -9,8 +9,8 @@ function compute() {
     } else {
         var interest = principal * years * rate / 100;
         var year = new Date().getFullYear() + parseInt(years);
-        var result = "If you deposit " + principal + ",\nat an interest rate of " + rate + "%.\nYou will receive an amount of " + interest + ",\nin the year "+ year;
-        document.getElementById("result").innerText = result;
+        var result = "If you deposit <mark>" + principal + "</mark>,<br>at an interest rate of <mark>" + rate + "%</mark>.<br>You will receive an amount of <mark>" + interest + ",</mark><br>in the year <mark>" + year + "</mark>";
+        document.getElementById("result").innerHTML = result;
     }
 }
 
